@@ -1,8 +1,19 @@
+import ProfileCard from "./components/ProfileCard";
+const myResumeData = [
+  {
+    name: "Moslem",
+    age: "24",
+    skill: "Front-End developer",
+    email: "Bazgi513@gmail.com",
+    description: "This is My resume passed via props!",
+  },
+];
+
 function App() {
   return (
-    <div>
+    <div className="name">
       <h1>Hello React!</h1>
-      <p>Day 1 of Phase 2 is complete.</p>
+      <ProfileCard data={myResumeData} />
     </div>
   );
 }
